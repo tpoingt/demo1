@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo1
+  annotations:
+    github.com/project-slug: tpoingt/demo1
+    backstage.io/techdocs-ref: dir:.
+    'backstage.io/kubernetes-namespace': app-ns
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/name=demo1-podinfo'
+    backstage.io/linguist: 'https://github.com/tpoingt/demo1'
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
